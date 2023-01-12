@@ -1,0 +1,7 @@
+.mycards{
+    display: flex;
+    flex-direction: row;
+ gap: 2%;
+ margin-top: 10px;
+}
+

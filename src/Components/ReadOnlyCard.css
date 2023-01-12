@@ -1,0 +1,20 @@
+iframe:focus {
+    outline: none;
+  }
+  
+  iframe[seamless] {
+    display: block;
+  }
+
+ .card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+ }
+
+ .card .cardactions{
+  align-items: center;
+  margin-left: 60px;
+ }
