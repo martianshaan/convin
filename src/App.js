@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import {Route,Routes ,Link} from 'react-router-dom';
+import {Route,Routes} from 'react-router-dom';
  import Home from './Pages/Home'
 import History from './Pages/History';
 import TopNavBar from './Components/Navbar/TopNavbar'
 import { useState } from 'react';
-import Data from '../src/Pages/Data'
+
 
 function App() {
   const [history,setHistory]= useState([])

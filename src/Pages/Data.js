@@ -1,4 +1,4 @@
-export default [ {
+ const Data=[ {
     "id": 1,
     "Name": "Bhuvan Bam",
     "Link": "https://www.youtube.com/embed/zm6xa3ggt5A",
@@ -11,4 +11,4 @@ export default [ {
     "Bucket": "entertainment"
   }]
 
-   
+  export default Data

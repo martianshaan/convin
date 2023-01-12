@@ -1,8 +1,6 @@
-import React,{useState,Fragment,useEffect} from 'react'
+import React,{useState,Fragment} from 'react'
 import Box from '@mui/material/Box'
 import Data from './Data'
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
 import ReadOnlyCard from '../Components/ReadOnlyCard';
 import EditCard from '../Components/EditCard'
 import FilteredInfo from '../Components/FilteredInfo';
@@ -32,7 +30,6 @@ function Home({setHistory,history}) {
     
   const [filterTextValue,setFilterTextValue]= useState("all")
 
-  const [filteredInfo,setFilteredInfo] = useState(info) 
 
 let filteredProductList = info.filter(item=>{
   if(filterTextValue==='entertainment'){

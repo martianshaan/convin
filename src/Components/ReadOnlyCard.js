@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { Button, CardActions, Link } from '@mui/material';
+import { Button, CardActions } from '@mui/material';
 import Modal from '@mui/material/Modal';
-import ReactPlayer from 'react-player/lazy'
 import { Box } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -38,7 +37,7 @@ function ReadOnlyCard({person,handleEditClick,hanleDeleteClick, setHistory,histo
        Video Type: {person.Bucket}
       </Typography>
      <Button  variant='contained' sx={{bgcolor:'black',color:'white'}}onClick={() => {setOpen(true); setPlaying(true);setHistory([person])}}>Play Video</Button>
-      <Modal open={open} onClose={() => {setOpen(false); setPlaying(false);}}>
+      <Modal open={open} onClose={() => {setOpen(false); setPlaying(false);}} playing={playing}>
         <Box sx={style}>
         {/* <ReactPlayer url={person.Link}      
            playing={playing}
